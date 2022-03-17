@@ -38,15 +38,8 @@ For the first milestone in the process of creating your portfolio website, you w
 - For this project, you should use the [HTML&CSS linter](https://github.com/microverseinc/linters-config/tree/master/html-css)
 - The 2 sections you need to build for this project are:
 
-    - the toolbar (or header):
-    <p align="center">
-     <img src="./images/m1_setup/toolbar-mobile.png" alt="Toolbar" />
-    </p>
-
-    - the headline section (right after the header):
-    <p align="center">
-      <img src="./images/m1_setup/headline-mobile.png" alt="Headline" />
-    </p>
+    - the toolbar (or header)
+    - the headline section (right after the header)
     
 - In order to lay out the elements on the page you should use Flexbox in all 2 sections.
 - You don't need to implement any functionality that requires JavaScript, like opening the menu or creating dropdowns.
