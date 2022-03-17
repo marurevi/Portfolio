@@ -1,12 +1,53 @@
 body {
-  background-color: whitesmoke;
-  color: darkslategray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  color: black;
   width: 320px;
   height: 640px;
 }
 
-header {
+#header {
   display: flex;
   flex-direction: row;
-  align-items: center;
 }
+
+h1 {
+  font-family: 'Playfair Display';
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+    text-align: center;
+}
+
+p {
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+    text-align: left;
+}
+
+.btn {
+  position: absolute;
+  width: 290px;
+  height: 50px;
+  background-color: #1A2236;
+  color: white;
+}
+
+.box1 {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+
+.box2 {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
