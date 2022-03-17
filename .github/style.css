@@ -1,0 +1,12 @@
+body {
+  background-color: whitesmoke;
+  color: darkslategray;
+  width: 320px;
+  height: 640px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
