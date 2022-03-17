@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -14,40 +19,53 @@ body {
 }
 
 h1 {
-  font-family: 'Playfair Display';
+  position: relative;
+  font-family: Helvetica, sans-serif;
   font-size: 50px;
   font-style: normal;
   font-weight: 400;
   line-height: 50px;
-    text-align: center;
+  text-align: center;
 }
 
 p {
-  font-family: 'Poppins';
+  position: relative;
+  padding: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
-    text-align: left;
+  text-align: left;
 }
 
 .btn {
-  position: absolute;
+  position: relative;
   width: 290px;
   height: 50px;
-  background-color: #1A2236;
+  top: 10vw;
+  left: 10%;
+  right: 50%;
+  background-color: #1a2236;
   color: white;
 }
 
 .box1 {
   position: absolute;
-  left: 15px;
-  top: 15px;
+  left: 5vw;
+  top: 5vw;
 }
 
 .box2 {
   position: absolute;
-  right: 15px;
-  top: 15px;
+  right: 5vw;
+  top: 5vw;
 }
 
+.box3 {
+  position: absolute;
+  top: 20vw;
+  left: 25%;
+  right: 50%;
+  width: 350px;
+}
