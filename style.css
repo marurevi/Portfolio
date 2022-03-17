@@ -4,18 +4,27 @@
 }
 
 body {
+  position: absolute;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
   background-color: white;
   color: black;
   width: 320px;
   height: 640px;
 }
 
-#header {
+nav {
   display: flex;
   flex-direction: row;
+  width: 320px;
+  height: 74px;
+}
+
+#headline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h1 {
@@ -24,43 +33,52 @@ h1 {
   font-size: 50px;
   font-style: normal;
   font-weight: 400;
-  line-height: 50px;
-  text-align: center;
+  line-height: 60px;
+  text-align: left;
 }
 
 p {
   position: relative;
   padding: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
   text-align: left;
 }
 
-.btn {
+.btn .btn::before {
   position: relative;
-  width: 290px;
-  height: 50px;
-  top: 10vw;
+  width: 300px;
+  height: 60px;
+  top: 2vw;
   left: 10%;
   right: 50%;
   background-color: #1a2236;
   color: white;
-  margin: 10px 0 30% 0;
+  margin-bottom: 50px;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #1a2236;
+  border: solid #1a2236 3px;
 }
 
 .box1 {
   position: absolute;
-  left: 5vw;
-  top: 5vw;
+  left: 7vw;
+  top: 0;
 }
 
-.box2 {
+.menuBtn {
   position: absolute;
-  right: 5vw;
-  top: 5vw;
+  background-color: white;
+  border: 0;
+  padding: 5px;
+  left: 450px;
+  top: 0;
 }
 
 .box3 {
