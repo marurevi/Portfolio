@@ -107,3 +107,28 @@ p {
   color: #1a2236;
   border: solid #1a2236 1px;
 }
+
+/* Second Part of the Project */
+.sectionWorks {
+  position: relative;
+  top: 640px;
+  width: 320px 0;
+  background-color: aqua;
+  border: solid red 1px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 186px 200px;
+  gap: 1px;
+  background-color: white;
+  padding: 0px;
+}
+
+.grid-container > div {
+  background-color: #1a2236;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  color: white;
+}
