@@ -9,7 +9,6 @@ body {
   color: black;
   width: 320px;
   height: 640px;
-  border: solid black 1px;
 }
 
 nav {
@@ -141,13 +140,14 @@ p {
 .btn:hover {
   background-color: white;
   color: #1a2236;
-  border: solid #1a2236 5px;
+  border: solid #1a2236 1px;
 }
 
-.btn:focus {
+.btn:active {
   background-color: white;
+  font-weight: bold;
   color: #1a2236;
-  border: solid #1a2236 1px;
+  border: solid #1a2236 5px;
 }
 
 .sectionWorks {
@@ -155,7 +155,6 @@ p {
   top: 640px;
   width: 320px;
   background-color: white;
-  border: solid red 2px;
 }
 
 .grid-containerWork {
@@ -198,7 +197,6 @@ a {
   top: 640px;
   width: 320px;
   background-color: white;
-  border: solid red 2px;
 }
 
 .grid-containerAbout {
@@ -212,40 +210,40 @@ a {
 .blue {
   background-image: url(./images/blueCard.png);
   background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: left;
   margin-left: 15px;
 }
 
 .red {
   background-image: url(./images/redCard.png);
   background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: left;
   margin-left: 15px;
 }
 
 .yellow {
   background-image: url(./images/yellowCard.png);
   background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: left;
   margin-left: 15px;
 }
 
-.text {
+.textLevel1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bolder;
+  line-height: 30px;
+  color: white;
+}
+
+.textLevel2 {
   font-family: 'Poppins', serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: lighter;
+  font-weight: bold;
   line-height: 27px;
   text-align: left;
   color: white;
-  justify-content: center;
 }
