@@ -1,7 +1,7 @@
 # Portfolio-setup-and-mobile-version-skeleton
 
 ## Description
-I built a personal portfolio site. Using images and backgrounds to enhance the look of the website.
+I built a personal portfolio site. Using images and backgrounds to enhance the look of the website. This project use a template from Figma
 
 ## Built With
 - HTML
@@ -11,9 +11,9 @@ I built a personal portfolio site. Using images and backgrounds to enhance the l
 
 👤 **Mariana Revilla Lérida**
 
-- GitHub: [@githubhandle](https://github.com/marurevi)
-- Twitter: [@twitterhandle](https://twitter.com/MaruRevilla)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/mariana-revilla-lérida-a12aba143)
+- GitHub: [@marurevi](https://github.com/marurevi)
+- Twitter: [@MaruRevilla](https://twitter.com/MaruRevilla)
+- LinkedIn: [Mariana-Revilla-Lérida](https://linkedin.com/in/mariana-revilla-lérida-a12aba143)
 
 ## Show your support
 
