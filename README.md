@@ -15,6 +15,13 @@ I built a personal portfolio site. Using images and backgrounds to enhance the l
 - Twitter: [@MaruRevilla](https://twitter.com/MaruRevilla)
 - LinkedIn: [Mariana-Revilla-Lérida](https://linkedin.com/in/mariana-revilla-lérida-a12aba143)
 
+
+## Colaborators
+
+👤 **Ronald Skinner**
+
+- GitHub: [@rskinnerc](https://github.com/rskinnerc)
+- Twitter: [@XSkinner](https://twitter.com/XSkinner)
 ## Show your support
 
 Give a ⭐️ if you like this project!
