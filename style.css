@@ -302,3 +302,19 @@ input:focus {
   border: 1px solid #1a2236;
   outline: none;
 }
+
+textarea {
+  border: 1px solid #dfdfe0;
+  border-radius: 4px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  padding-top: 23px;
+  padding-left: 16px;
+  box-sizing: border-box;
+}
+
+footer .btn {
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
