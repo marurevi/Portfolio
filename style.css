@@ -318,3 +318,25 @@ footer .btn {
   box-sizing: border-box;
   width: 100%;
 }
+
+.footer-links {
+  background: #1a2236;
+  box-sizing: border-box;
+  margin: 64px -14px 0 -18px;
+  padding: 32px 16px;
+}
+
+.footer-anchor {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500px;
+  color: #92dcdc;
+  padding: 0;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.footer-anchor img {
+  margin: 0 15px;
+}
