@@ -251,3 +251,54 @@ footer {
   margin-top: 50px;
   padding: 106px 14px 0 18px;
 }
+
+footer h1 {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
+
+footer p {
+  margin: 20px 0 32px 0;
+  padding: 0;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container li {
+  list-style: none;
+  position: relative;
+  margin: 4px 0;
+}
+
+.form-container label {
+  position: absolute;
+  top: 4px;
+  left: 16px;
+  font-size: 10px;
+  color: #7d7c84;
+  font-family: "Poppins", sans-serif;
+}
+
+input {
+  border-radius: 4px;
+  height: 52px;
+  border: 1px solid #dfdfe0;
+  width: 100%;
+  padding-top: 23px;
+  padding-left: 16px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #1a2236;
+  font-family: "Poppins", sans-serif;
+}
+
+input:focus {
+  border: 1px solid #1a2236;
+  outline: none;
+}
