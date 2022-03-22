@@ -340,3 +340,13 @@ footer .btn {
 .footer-anchor img {
   margin: 0 15px;
 }
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin: 30.5px 0 8.5px 0;
+}
+
+.links li {
+  list-style: none;
+}
