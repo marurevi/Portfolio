@@ -241,3 +241,13 @@ a {
   text-align: center;
   color: #1a2236;
 }
+
+footer {
+  background-image: url(./images/corner.png);
+  background-position: left top;
+  background-color: #f9f9fa;
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin-top: 50px;
+  padding: 106px 14px 0 18px;
+}
