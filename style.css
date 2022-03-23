@@ -42,7 +42,7 @@ nav {
   background-position-y: bottom;
 }
 
-.text1 {  
+.text1 {
   padding-left: 16px;
   font-family: "Playfair Display", serif;
   font-size: 50px;
@@ -62,7 +62,7 @@ h1 {
 h2 {
   width: 181px;
   height: 50px;
-  padding: 40px 0px 20px 0;
+  padding: 40px 0 20px 0;
 }
 
 .text2 {
@@ -76,8 +76,8 @@ h2 {
 }
 
 p {
-padding: 0 16px;
-margin-bottom: 40px;
+  padding: 0 16px;
+  margin-bottom: 40px;
 }
 
 .btn,
@@ -110,11 +110,7 @@ footer .btn {
   border: solid #1a2236 5px;
 }
 
-#headline > .btn {
-  margin-bottom: 192.2px;
-}
-
-h3 {
+.text3 {
   font-family: "Poppins", serif;
   font-size: 20px;
   font-style: normal;
@@ -175,6 +171,10 @@ a {
   margin-bottom: 40px;
 }
 
+#headline > .btn {
+  margin-bottom: 192.2px;
+}
+
 .grid-containerAbout {
   display: grid;
   grid-template-rows: 289px 289px 289px;
@@ -201,7 +201,7 @@ a {
   margin-left: 15px;
 }
 
-.text3 {
+.text4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -214,7 +214,7 @@ a {
   color: white;
 }
 
-.text4 {
+.text5 {
   font-family: "Poppins", serif;
   font-size: 16px;
   font-style: normal;
