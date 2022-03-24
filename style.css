@@ -129,7 +129,7 @@ body {
   
   .grid-containerWork {
     display: grid;
-    grid-template-rows: 188px 156px 188px 156px 188px 156px 188px 156px 188px 156px 188px 156px;
+    grid-template-rows: 344px 344px 344px 344px 344px 344px;
     gap: 2px;
     background-color: #1a2236;
     padding: 0;
@@ -146,7 +146,7 @@ body {
     display: flex;
     flex-direction: row;
     align-content: center;
-    margin: 10px 0 10px 10px;
+    margin: 10px;
   }
   
   .sectionAboutMySelf {
@@ -465,6 +465,57 @@ body {
     width: 702px;
     height: 877px;
   }
+
+  .sectionWorks {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "project card1 card1 card1"
+    "card2 . . card3"
+    "card4 card4 . card5"
+    ". . card6 .";
+    grid-gap: 15%;
+  }
+
+  .sectionWorks h2 {
+    transform: rotate(-90deg);
+    background-image: url(./images/image_dots.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    padding: 160px 0 202px 0;
+    grid-area: project;
+  }
+
+  .sectionWorks > div {
+    background-color: gray;
+    border: solid 2px black;
+  }
+
+  .card1 {
+    grid-area: card1;
+  }
+
+  .card2 {
+    grid-area: card2;
+  }
+
+  .card3 {
+    grid-area: card3;
+  }
+
+  .card4 {
+    grid-area: card4;
+  }
+
+  .card5 {
+    grid-area: card5;
+  }
+
+  .card6 {
+    grid-area: card6;
+  }
+
 }
 
 
