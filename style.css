@@ -370,7 +370,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     color: #1A2236;
-    margin: 38px 0 38px 536px;
+    margin: 38px 536px;
   }
 
   nav > button {
@@ -576,7 +576,6 @@ body {
 
   .card1 > img, .card2 > img, .card3 > img, .card4 > img, .card5 > img, .card6 > img {
     width: 100%;
-    padding-bottom: -80%;
   }
 
   .card1 #project1, .card1 .tools, .card1 a, .card2 #project2, .card2 .tools, .card2 a, .card3 #project3, .card3 .tools, .card3 a, .card4 #project4, .card4 .tools, .card4 a, .card5 #project5, .card5 .tools, .card5 a, .card6 #project6, .card6 .tools, .card6 a { 
@@ -809,35 +808,35 @@ body {
     margin: 0 32px;
   }
 
-  .imag2 {
+  .img2 {
     background-image: url(./images/image-geometry_2.svg);
     background-repeat: no-repeat;
-    background-position: 100% 50%;
+    background-position: 50% 50%;
     grid-area: img2;
   }
   
-  .imag3 {
+  .img3 {
     background-image: url(./images/image-geometry_3.svg);
     background-repeat: no-repeat;
-    background-position: 100% 50%;
+    background-position: 50% 50%;
     grid-area: img3;
   }
 
-  .imag4 {
+  .img4 {
     background-image: url(./images/image-geometry_4.svg);
     background-repeat: no-repeat;
-    background-position: 100% 50%;
+    background-position: 50% 50%;
     grid-area: img4;
   }
 
-  .imag5 {
+  .img5 {
     background-image: url(./images/image-geometry_5.svg);
     background-repeat: no-repeat;
-    background-position: 100% 50%;
+    background-position: 50% 50%;
     grid-area: img5;
   }
 
-  .imag7 {
+  .img7 {
     background-image: url(./images/image-geometry_7.svg);
     background-repeat: no-repeat;
     background-position: 100% 50%;
