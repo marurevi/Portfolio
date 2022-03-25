@@ -16,105 +16,116 @@
 <body>
   <header id="header">
     <nav>
+      <a href="#header" >Hello</a>
+      <a href="#header">Portfolio</a>
+      <a href="#header">About</a>
+      <a href="#header">Contact</a>
       <button class="menuBtn" type="button"><img src="images/icons8-menu-rounded-50.png" alt="menu icon"></button>
     </nav>
   </header>
-  <section id="headline">
-    <h1 class="text1">Charlie Giorgiana</h1>
-    <p class="text2">Hello! I am a software developer! I can help you build a product,
+  <section id="headline" class="headline-grid">
+    <div class="col1">
+      <h1 class="text1">Charlie Giorgiana</h1>
+      <p class="text2">Hello! I am a software developer! I can help you build a product,
       feature o website. Take a look of my works.
       If you like what you see and have a project you need coded, don't
       hesitate and contact me.
-    </p>
-    <button class="btn" type="button">Start collaboration</button>
+      </p>
+      <button class="btn" type="button">Start collaboration</button>
+    </div>
+    <div class="col2"></div>
   </section>
 
   <!-- Second Part of the Project -->
 
   <section id="works" class="sectionWorks">
     <h2 class="text1">Projects</h2>
-    <div class="grid-containerWork">
-      <div><img src="./images/pj1.png" alt="imagen oficina 1"></div>
-      <div>
-        <h3 class="text3">Project name goes here</h3>
-        <div class="tools">
-          <ul class="textProject">
-            <li>HTML/CSS</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-          </ul>
-        </div>
-        <a href="#works">See this project <span><img src="./images/arrow.png" alt='arrow' /></span></a>
+    <div class="card1">
+      <img src="./images/pj1.png" alt="imagen oficina 1">
+      <h3 class="text3" id="project1">Project name goes here</h3>
+      <div class="tools">
+        <ul class="textProject">
+          <li>HTML/CSS</li>
+          <li>Ruby on Rails</li>
+          <li>JavaScript</li>
+        </ul>
       </div>
-      <div><img src="./images/pj2.png" alt="imagen oficina 2"></div>
-      <div>
-        <h3 class="text3">Project name goes here</h3>
-        <div class="tools">
-          <ul class="textProject">
-            <li>HTML/CSS</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-          </ul>
-        </div>
-        <a href="#works">See this project <span><img src="./images/arrow.png" alt='arrow' /></span></a>
-      </div>
-      <div><img src="./images/pj3.png" alt="imagen oficina 3"></div>
-      <div>
-        <h3 class="text3">Project name goes here</h3>
-        <div class="tools">
-          <ul class="textProject">
-            <li>HTML/CSS</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-          </ul>
-        </div>
-        <a href="#works">See this project <span><img src="./images/arrow.png" alt='arrow' /></span></a>
-      </div>
-      <div><img src="./images/pj4.png" alt="imagen oficina 4"></div>
-      <div>
-        <h3 class="text3">Project name goes here</h3>
-        <div class="tools">
-          <ul class="textProject">
-            <li>HTML/CSS</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-          </ul>
-        </div>
-        <a href="#works">See this project <span><img src="./images/arrow.png" alt='arrow' /></span></a>
-      </div>
-      <div><img src="./images/pj5.png" alt="imagen oficina 5"></div>
-      <div>
-        <h3 class="text3">Project name goes here</h3>
-        <div class="tools">
-          <ul class="textProject">
-            <li>HTML/CSS</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-          </ul>
-        </div>
-        <a href="#works">See this project <span><img src="./images/arrow.png" alt='arrow' /></span></a>
-      </div>
-      <div><img src="./images/pj6.png" alt="imagen oficina 6"></div>
-      <div>
-        <h3 class="text3">Project name goes here</h3>
-        <div class="tools">
-          <ul class="textProject">
-            <li>HTML/CSS</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-          </ul>
-        </div>
-        <a href="#works">See this project <span><img src="./images/arrow.png" alt='arrow' /></span></a>
-      </div>
+      <a href="#works" class="text6">See this project <span><img src="./images/arrow.png" alt='arrow' /></span></a>
     </div>
+    <div class="card2">
+      <img src="./images/pj2.png" alt="imagen oficina 2">
+      <h3 class="text3" id="project2">Project name goes here</h3>
+      <div class="tools">
+        <ul class="textProject">
+          <li>HTML/CSS</li>
+          <li>Ruby on Rails</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+      <a href="#works" class="text6">See this project <span><img src="./images/arrow.png" alt='arrow' /></span></a>
+    </div>
+    <div class="card3">
+      <img src="./images/pj3.png" alt="imagen oficina 3">
+      <h3 class="text3" id="project3">Project name goes here</h3>
+      <div class="tools">
+        <ul class="textProject">
+          <li>HTML/CSS</li>
+          <li>Ruby on Rails</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+      <a href="#works" class="text6">See this project <span><img src="./images/arrow.png" alt='arrow' /></span></a>
+    </div>
+    <div class="card4">
+      <img src="./images/pj4.png" alt="imagen oficina 4">
+      <h3 class="text3" id="project4">Project name goes here</h3>
+      <div class="tools">
+        <ul class="textProject">
+          <li>HTML/CSS</li>
+          <li>Ruby on Rails</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+      <a href="#works" class="text6">See this project <span><img src="./images/arrow.png" alt='arrow' /></span></a>
+    </div>
+    <div class="card5">
+      <img src="./images/pj5.png" alt="imagen oficina 5">
+      <h3 class="text3" id="project5">Project name goes here</h3>
+      <div class="tools">
+        <ul class="textProject">
+          <li>HTML/CSS</li>
+          <li>Ruby on Rails</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+      <a href="#works" class="text6">See this project <span><img src="./images/arrow.png" alt='arrow' /></span></a>
+    </div>
+    <div class="card6">
+      <img src="./images/pj6.png" alt="imagen oficina 6">
+      <h3 class="text3" id="project6">Project name goes here</h3>
+      <div class="tools">
+        <ul class="textProject">
+          <li>HTML/CSS</li>
+          <li>Ruby on Rails</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+      <a href="#works" class="text6">See this project <span><img src="./images/arrow.png" alt='arrow' /></span></a>
+    </div>
+    <div class="img2"></div>
+    <div class="img3"></div>
+    <div class="img4"></div>
+    <div class="img5"></div>
   </section>
   <section id="aboutMySelf" class="sectionAboutMySelf">
-    <h2 class="text1">About</h2>
-    <p class="text2">At Microverse, you’ll join one of the most collaborative and social learning communities in the world.
-      Throughout the program, you'll learn through collaborating with your peers in daily meetings, group
-      projects, and remote pair programming.
-    </p>
-    <button class="btn" type="button">Get my CV</button>
+    <div>
+      <h2 class="text1">About</h2>
+      <p class="text2">At Microverse, you’ll join one of the most collaborative and social learning communities in the world.
+        Throughout the program, you'll learn through collaborating with your peers in daily meetings, group
+        projects, and remote pair programming.
+      </p>
+      <button class="btn" type="button">Get my CV</button>
+    </div>
     <div class="grid-containerAbout">
       <div class="blue text4">Languages
         <ul>
@@ -142,21 +153,25 @@
           <li class="text5">Terminal</li>
         </ul>
       </div>
+      <div class="bkgdAbtMe"></div>
     </div>
   </section>
   <footer>
     <h1 class="text1">Get started</h1>
-    <p class="text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna.</p>
+    <p class="text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     <form action="https://formspree.io/f/myyoparn" method="POST">
       <ul class="form-container">
         <li>
-          <label for="name">Your name</label>
-          <input type="text" required name="name" id="name" value="Anastasiia" placeholder="Your name" maxlength="30">
-        </li>
-        <li>
-          <label for="email">Your email</label>
-          <input type="email" required name="email" id="email" placeholder="Your email">
+          <ul class="line-of-inputs">
+            <li>
+              <label for="name">Your name</label>
+              <input type="text" required name="name" id="name" value="Anastasiia" placeholder="Your name" maxlength="30">
+            </li>
+            <li>
+              <label for="email">Your email</label>
+              <input type="email" required name="email" id="email" placeholder="Your email">
+            </li>
+          </ul>
         </li>
         <li>
           <textarea name="message" required id="message" cols="30" rows="10" maxlength="500"
@@ -181,5 +196,4 @@
     </div>
   </footer>
 </body>
-
 </html>
