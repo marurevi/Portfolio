@@ -370,7 +370,7 @@ body {
   nav {
     display: flex;
     justify-content: space-around;
-    font-family: 'Poppins', serif;
+    font-family: "Poppins", serif;
     font-size: 16px;
     font-weight: 400;
     color: #1a2236;
@@ -443,6 +443,23 @@ body {
     font-weight: bold;
     color: #1a2236;
     border: solid #1a2236 5px;
+  }
+
+  #headline .text1 {
+    animation-duration: 3s;
+    animation-name: scaleandrotate;
+  }
+
+  @keyframes scaleandrotate {
+    from {
+      transform: scale(1.5);
+      transform: rotateX(360deg);
+    }
+
+    to {
+      transform: scale(1);
+      transform: rotateX(0deg);
+    }
   }
 
   .headline-grid {
@@ -740,7 +757,8 @@ body {
   /* Form Section */
 
   footer {
-    background-image: url(./images/image-geometry_6.svg), url(./images/image-geometry_7.svg);
+    background-image: url(./images/image-geometry_6.svg),
+      url(./images/image-geometry_7.svg);
     background-repeat: no-repeat;
     background-position: top left, 100% 92%;
     background-color: #f9f9fa;
