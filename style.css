@@ -424,9 +424,8 @@ body {
   }
   
   footer .btn {
-    margin: 0;
     box-sizing: border-box;
-    width: 100%;
+    width: 50%;
   }
   
   .btn:hover {
@@ -492,6 +491,9 @@ body {
   }
 
   .sectionWorks h2 {
+    background-image: url(./images/image_dots.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
     transform: rotate(-90deg);
     padding: 160px 0 202px 0;
     grid-area: project;
@@ -734,7 +736,7 @@ body {
 
   .form-container label {
     position: absolute;
-    top: 4px;
+    bottom: 110px;
     left: 16px;
     font-size: 10px;
     color: #7d7c84;
