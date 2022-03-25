@@ -246,6 +246,10 @@ body {
     color: #1a2236;
   }
   
+  .sectionAboutMySelf button {
+    margin-bottom: 40px;
+  }
+
   footer {
     background-image: url(./images/corner.png);
     background-position: left top;
@@ -354,17 +358,19 @@ body {
     list-style: none;
   }  
 }
+
 /* Desktop screen */
+
 @media only screen and (min-width: 768px) {
   
   nav {
     display: flex;
     justify-content: space-around;
-    margin: auto 50px;
     font-family: 'Poppins', serif;
     font-size: 16px;
     font-weight: 400;
     color: #1A2236;
+    margin: 38px 0 38px 536px;
   }
 
   nav > button {
@@ -475,21 +481,18 @@ body {
     "project project card1 card1 card1 card1"
     "project project card1 card1 card1 card1"
     "project project . . . ."
-    "card2 card2 . . card6 card6"
-    "card2 card2 . . card6 card6"
+    "card2 card2 img2 img2 card6 card6"
+    "card2 card2 img2 img2 card6 card6"
     "card3 card3 card3 . card5 card5"
     "card3 card3 card3 . card5 card5"
-    "card3 card3 card3 . . ."
-    ". . . card4 card4 ."
+    "card3 card3 card3 img3 img3 img3"
+    "img5 . img4 card4 card4 ."
     ". . . card4 card4 .";
     grid-gap: 0;
   }
 
   .sectionWorks h2 {
     transform: rotate(-90deg);
-    background-image: url(./images/image_dots.svg);
-    background-repeat: no-repeat;
-    background-position: bottom right;
     padding: 160px 0 202px 0;
     grid-area: project;
   }
@@ -529,7 +532,7 @@ body {
     padding-bottom: 20px;
   }
   
-  .card1 h3, .card2 h3, .card3 h3, .card4 h3, .card5 h3, .card6 h3 {
+  .card1 #project1, .card2 #project2, .card3 #project3, .card4 #project4, .card5 #project5, .card6 #project6 {
     font-family: "Poppins", serif;
     font-size: 20px;
     font-style: normal;
@@ -576,86 +579,267 @@ body {
     padding-bottom: -80%;
   }
 
-  .card1 h3, .card1 .tools, .card1 a, .card2 h3, .card2 .tools, .card2 a, .card3 h3, .card3 .tools, .card3 a, .card4 h3, .card4 .tools, .card4 a, .card5 h3, .card5 .tools, .card5 a, .card6 h3, .card6 .tools, .card6 a { 
+  .card1 #project1, .card1 .tools, .card1 a, .card2 #project2, .card2 .tools, .card2 a, .card3 #project3, .card3 .tools, .card3 a, .card4 #project4, .card4 .tools, .card4 a, .card5 #project5, .card5 .tools, .card5 a, .card6 #project6, .card6 .tools, .card6 a { 
     display: none; 
     padding: 0;   
   }
 
+  .card1:hover #project1, .card1:hover .tools, .card1:hover a, .card2:hover #project2, .card2:hover .tools, .card2:hover a, .card3:hover #project3, .card3:hover .tools, .card3:hover a, .card4:hover #project4, .card4:hover .tools, .card4:hover a, .card5:hover #project5, .card5:hover .tools, .card5:hover a, .card6:hover #project6, .card6:hover .tools, .card6:hover a { 
+    display: block; 
+    padding: 0;   
+  }  
+
 /* About me Section */
 
-.sectionAboutMySelf {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  margin-top: 244px;
+  .sectionAboutMySelf {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: 244px;
+  }
+
+  .sectionAboutMySelf p {
+    width: 446px;
+  }
+
+  .grid-containerAbout {
+    display: grid;
+    grid-template-rows: 289px 289px;
+    grid-template-columns: 289px 289px;
+    grid-template-areas: 
+    "azul rojo"
+    "amarillo dots";
+    color: white;
+    padding: 0;
+  }
+
+  .blue {
+    background-image: url(./images/blueCard.png);
+    background-repeat: no-repeat;
+    grid-area: azul;
+  }
+
+  .red {
+    background-image: url(./images/redCard.png);
+    background-repeat: no-repeat;
+    grid-area: rojo;
+  }
+
+  .yellow {
+    background-image: url(./images/yellowCard.png);
+    background-repeat: no-repeat;
+    grid-area: amarillo;
+  }
+
+  .bkgdAbtMe {
+    background-image: url(./images/image_dots_with_teal.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    grid-area: dots;
+  }
+
+  .text4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    font-family: "Poppins", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: 30px;
+    color: white;
+  }
+
+  .text5 {
+    font-family: "Poppins", serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 27px;
+    text-align: left;
+    color: white;
+    position: relative;
+    left: 0%;
+  }
+
+  /* Form Section */
+
+  footer {
+    background-image: url(./images/image-geometry_6.svg), url(./images/image-geometry_7.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    background-color: #f9f9fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 160px;
+  }
+
+  footer .text1 {
+    font-family: "Playfair Display", serif;
+    font-size: 110px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    width: 548px;
+    height: 110px;
+    color: #1a2236;
+    margin: 168px 0 40px 0;
+    padding: 0;
+  }
+
+  footer .text2  {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #1a2236;
+    width: 548px;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  .line-of-inputs {
+    display: flex;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .form-container ul > li {
+    list-style: none;
+    position: relative;
+    margin: 4px 0;
+  }
+
+  .form-container ul {
+    list-style: none;
+  }
+
+  .form-container li {
+    list-style: none;
+  }
+
+  .form-container label {
+    position: absolute;
+    top: 4px;
+    left: 16px;
+    font-size: 10px;
+    color: #7d7c84;
+    font-family: "Poppins", sans-serif;
+  }
+
+  input {
+    border-radius: 4px;
+    height: 60px;
+    border: 1px solid #dfdfe0;
+    width: 254px;
+    padding-top: 23px;
+    padding-left: 16px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #1a2236;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    margin: 0 18px 40px 18px;
+  }
+
+  input:focus {
+    border: 1px solid #1a2236;
+    outline: none;
+  }
+
+  textarea {
+    border: 1px solid #dfdfe0;
+    border-radius: 4px;
+    width: 542px;
+    height: 140px;
+    font-family: "Poppins", sans-serif;
+    padding-top: 23px;
+    padding-left: 16px;
+    box-sizing: border-box;
+    margin-left: 20px;
+    margin-bottom: 40px;
+  }
+
+  textarea:focus {
+    border: 1px solid #1a2236;
+    outline: none;
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content: space-around;
+    background: #1a2236;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 160px;
+    padding: 32px 16px;
+  }
+
+  .footer-anchor {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #92dcdc;
+    padding: 0;
+    border: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-anchor img {
+    margin: 0 15px;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .links li {
+    list-style: none;
+    margin: 0 32px;
+  }
+
+  .imag2 {
+    background-image: url(./images/image-geometry_2.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    grid-area: img2;
+  }
+  
+  .imag3 {
+    background-image: url(./images/image-geometry_3.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    grid-area: img3;
+  }
+
+  .imag4 {
+    background-image: url(./images/image-geometry_4.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    grid-area: img4;
+  }
+
+  .imag5 {
+    background-image: url(./images/image-geometry_5.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    grid-area: img5;
+  }
+
+  .imag7 {
+    background-image: url(./images/image-geometry_7.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+  }
 }
-
-.sectionAboutMySelf p {
-  width: 446px;
-}
-
-.grid-containerAbout {
-  display: grid;
-  grid-template-rows: 289px 289px;
-  grid-template-columns: 289px 289px;
-  grid-template-areas: 
-  "azul rojo"
-  "amarillo dots";
-  color: white;
-  padding: 0;
-}
-
-.blue {
-  background-image: url(./images/blueCard.png);
-  background-repeat: no-repeat;
-  grid-area: azul;
-}
-
-.red {
-  background-image: url(./images/redCard.png);
-  background-repeat: no-repeat;
-  grid-area: rojo;
-}
-
-.yellow {
-  background-image: url(./images/yellowCard.png);
-  background-repeat: no-repeat;
-  grid-area: amarillo;
-}
-
-.bkgdAbtMe {
-  background-image: url(./images/image_dots_with_teal.svg);
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  grid-area: dots;
-}
-
-.text4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 50px;
-  font-family: "Poppins", serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: bolder;
-  line-height: 30px;
-  color: white;
-}
-
-.text5 {
-  font-family: "Poppins", serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: bold;
-  line-height: 27px;
-  text-align: left;
-  color: white;
-  position: relative;
-  left: 0%;
-}
-
-
-}
-
-
