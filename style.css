@@ -286,7 +286,7 @@ body {
   
   .form-container label {
     position: absolute;
-    top: 4px;
+    bottom: 110px;
     left: 16px;
     font-size: 10px;
     color: #7d7c84;
@@ -583,9 +583,15 @@ body {
     padding: 0;   
   }
 
+  .text3 {
+    font-weight: 700, bold;
+    font-size: 60px;
+    line-height: 48px;
+    margin: 60px 0 0 60px;
+  }
+
   .card1:hover #project1, .card1:hover .tools, .card1:hover a, .card2:hover #project2, .card2:hover .tools, .card2:hover a, .card3:hover #project3, .card3:hover .tools, .card3:hover a, .card4:hover #project4, .card4:hover .tools, .card4:hover a, .card5:hover #project5, .card5:hover .tools, .card5:hover a, .card6:hover #project6, .card6:hover .tools, .card6:hover a { 
     display: block; 
-    padding: 0;   
   }  
 
 /* About me Section */
@@ -667,7 +673,7 @@ body {
   footer {
     background-image: url(./images/image-geometry_6.svg), url(./images/image-geometry_7.svg);
     background-repeat: no-repeat;
-    background-position: top left, bottom right;
+    background-position: top left, 100% 92%;
     background-color: #f9f9fa;
     display: flex;
     flex-direction: column;
@@ -792,6 +798,7 @@ body {
     border: none;
     display: flex;
     align-items: center;
+    text-decoration: none;
   }
 
   .footer-anchor img {
@@ -834,11 +841,5 @@ body {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     grid-area: img5;
-  }
-
-  .img7 {
-    background-image: url(./images/image-geometry_7.svg);
-    background-repeat: no-repeat;
-    background-position: 100% 50%;
   }
 }
