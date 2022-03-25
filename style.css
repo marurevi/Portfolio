@@ -502,6 +502,19 @@ body {
     background-size: 100%;
     width: 702px;
     height: 877px;
+    animation-duration: 4s;
+    animation-name: makemevissible;
+    animation-timing-function: ease-in;
+  }
+
+  @keyframes makemevissible {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
   }
 
   .sectionWorks {
