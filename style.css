@@ -384,6 +384,18 @@ body {
   nav a {
     color: inherit;
     text-decoration: none;
+    animation-duration: 3s;
+    animation-name: blurred;
+  }
+
+  @keyframes blurred {
+    from {
+      text-shadow: 0 0 20px orange;
+    }
+
+    to {
+      text-shadow: 0 0 0 orange;
+    }
   }
 
   .text1 {
