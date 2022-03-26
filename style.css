@@ -386,15 +386,18 @@ body {
     text-decoration: none;
     animation-duration: 3s;
     animation-name: blurred;
+    animation-direction: alternate;
   }
 
   @keyframes blurred {
     from {
       text-shadow: 0 0 20px orange;
+      transform: scale(1);
     }
 
     to {
       text-shadow: 0 0 0 orange;
+      transform: scale(1.5);
     }
   }
 
@@ -449,7 +452,6 @@ body {
     background-color: white;
     color: #1a2236;
     border: solid #1a2236 1px;
-
   }
 
   .btn:active {
@@ -457,6 +459,32 @@ body {
     font-weight: bold;
     color: #1a2236;
     border: solid #1a2236 5px;
+  }
+
+  footer .text1 {
+    font-family: "Playfair Display", serif;
+    font-size: 110px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    width: 548px;
+    height: 110px;
+    color: #1a2236;
+    margin: 168px 0 40px 0;
+    padding: 0;
+  }
+
+  footer .text2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #1a2236;
+    width: 548px;
+    margin: 0;
+    padding-left: 0;
   }
 
   #headline .text1 {
@@ -786,7 +814,8 @@ body {
   /* Form Section */
 
   footer {
-    background-image: url(./images/image-geometry_6.svg),
+    background-image:
+      url(./images/image-geometry_6.svg),
       url(./images/image-geometry_7.svg);
     background-repeat: no-repeat;
     background-position: top left, 100% 92%;
@@ -796,32 +825,6 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 160px;
-  }
-
-  footer .text1 {
-    font-family: "Playfair Display", serif;
-    font-size: 110px;
-    font-style: normal;
-    font-weight: 400;
-    text-align: center;
-    width: 548px;
-    height: 110px;
-    color: #1a2236;
-    margin: 168px 0 40px 0;
-    padding: 0;
-  }
-
-  footer .text2 {
-    font-family: "Poppins", sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 21px;
-    text-align: left;
-    color: #1a2236;
-    width: 548px;
-    margin: 0;
-    padding-left: 0;
   }
 
   .line-of-inputs {
