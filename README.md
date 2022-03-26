@@ -1,11 +1,15 @@
 # Portfolio-setup-and-mobile-version-skeleton
 
 ## Description
-I built a personal portfolio site. Using images and backgrounds to enhance the look of the website. This project use a template from Figma
+I built a personal portfolio site, using images and backgrounds to enhance the look of the website. This project has been created from a Figma template. It has been done using responsiveness to fit in a mobile or in desktop screen. 
 
 ## Built With
 - HTML
 - CSS
+
+## Live Demo (if available)
+
+You can see how it looks here 👉[Portfolio](https://marurevi.github.io/Portfolio-setup-and-mobile-version-skeleton/)
 
 ## Authors
 
