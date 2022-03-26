@@ -437,6 +437,7 @@ body {
     color: white;
     font-family: "Poppins", sans-serif;
     font-size: medium;
+    transition: all 1s ease-out;
   }
 
   footer .btn {
@@ -448,6 +449,7 @@ body {
     background-color: white;
     color: #1a2236;
     border: solid #1a2236 1px;
+
   }
 
   .btn:active {
