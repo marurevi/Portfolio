@@ -505,11 +505,13 @@ body {
     animation-duration: 4s;
     animation-name: makemevissible;
     animation-timing-function: ease-in;
+    transition: width 2s, height 2s, transform 2s;
   }
 
   @keyframes makemevissible {
     from {
       opacity: 0;
+      transform: rotate(180deg);
     }
 
     to {
