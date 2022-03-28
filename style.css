@@ -471,7 +471,7 @@ body {
     font-size: medium;
     transition: all 1s ease-out;
   }
-  
+
   .btnWhite,
   .btnWhite::before {
     width: 80%;
@@ -722,8 +722,8 @@ body {
   .card4 .btnWhite,
   .card5 .btnWhite,
   .card6 .btnWhite {
-   margin-top: 10px;
-   width: 60%
+    margin-top: 10px;
+    width: 60%;
   }
 
   .card1 > img,
