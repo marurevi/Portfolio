@@ -91,6 +91,22 @@ body {
     color: white;
     font-family: "Poppins", sans-serif;
     font-size: medium;
+    transition: all 1s ease-out;
+  }
+
+  .btnWhite,
+  .btnWhite::before {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 12px 21px;
+    background-color: white;
+    color: #1a2236;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+    transition: all 1s ease-out;
   }
 
   footer .btn {
@@ -105,11 +121,23 @@ body {
     border: solid #1a2236 1px;
   }
 
+  .btnWhite:hover {
+    background-color: #1a2236;
+    color: white;
+    border: solid white 1px;
+  }
+
   .btn:active {
     background-color: white;
     font-weight: bold;
     color: #1a2236;
     border: solid #1a2236 5px;
+  }
+
+  .btnWhite:active {
+    background-color: #1a2236;
+    color: white;
+    border: solid white 5px;
   }
 
   .text3 {
@@ -127,6 +155,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: white;
+    align-items: center;
     padding: 0;
   }
 
@@ -443,6 +472,21 @@ body {
     transition: all 1s ease-out;
   }
 
+  .btnWhite,
+  .btnWhite::before {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 12px 21px;
+    background-color: white;
+    color: #1a2236;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+    transition: all 1s ease-out;
+  }
+
   footer .btn {
     box-sizing: border-box;
     width: 50%;
@@ -454,11 +498,23 @@ body {
     border: solid #1a2236 1px;
   }
 
+  .btnWhite:hover {
+    background-color: #1a2236;
+    color: white;
+    border: solid white 1px;
+  }
+
   .btn:active {
     background-color: white;
     font-weight: bold;
     color: #1a2236;
     border: solid #1a2236 5px;
+  }
+
+  .btnWhite:active {
+    background-color: #1a2236;
+    color: white;
+    border: solid white 5px;
   }
 
   footer .text1 {
@@ -660,22 +716,14 @@ body {
     color: #1a2236;
   }
 
-  .card1 a,
-  .card2 a,
-  .card3 a,
-  .card4 a,
-  .card5 a,
-  .card6 a {
-    border: solid white 1px;
-    font-family: "Poppins", serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 80%;
-    text-align: center;
-    color: white;
-    padding: 3px 10px 3px 10px;
-    text-decoration: none;
+  .card1 .btnWhite,
+  .card2 .btnWhite,
+  .card3 .btnWhite,
+  .card4 .btnWhite,
+  .card5 .btnWhite,
+  .card6 .btnWhite {
+    margin-top: 10px;
+    width: 60%;
   }
 
   .card1 > img,
@@ -689,22 +737,22 @@ body {
 
   .card1 #project1,
   .card1 .tools,
-  .card1 a,
+  .card1 .btnWhite,
   .card2 #project2,
   .card2 .tools,
-  .card2 a,
+  .card2 .btnWhite,
   .card3 #project3,
   .card3 .tools,
-  .card3 a,
+  .card3 .btnWhite,
   .card4 #project4,
   .card4 .tools,
-  .card4 a,
+  .card4 .btnWhite,
   .card5 #project5,
   .card5 .tools,
-  .card5 a,
+  .card5 .btnWhite,
   .card6 #project6,
   .card6 .tools,
-  .card6 a {
+  .card6 .btnWhite {
     display: none;
     padding: 0;
   }
@@ -718,22 +766,22 @@ body {
 
   .card1:hover #project1,
   .card1:hover .tools,
-  .card1:hover a,
+  .card1:hover .btnWhite,
   .card2:hover #project2,
   .card2:hover .tools,
-  .card2:hover a,
+  .card2:hover .btnWhite,
   .card3:hover #project3,
   .card3:hover .tools,
-  .card3:hover a,
+  .card3:hover .btnWhite,
   .card4:hover #project4,
   .card4:hover .tools,
-  .card4:hover a,
+  .card4:hover .btnWhite,
   .card5:hover #project5,
   .card5:hover .tools,
-  .card5:hover a,
+  .card5:hover .btnWhite,
   .card6:hover #project6,
   .card6:hover .tools,
-  .card6:hover a {
+  .card6:hover .btnWhite {
     display: block;
   }
 
