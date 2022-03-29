@@ -607,19 +607,19 @@ body {
 
   .sectionWorks {
     display: grid;
-    grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+    grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
     grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
     grid-template-areas:
-      "project project card1 card1 card1 card1"
-      "project project card1 card1 card1 card1"
-      "project project . . . ."
-      "card2 card2 img2 img2 card6 card6"
-      "card2 card2 img2 img2 card6 card6"
-      "card3 card3 card3 . card5 card5"
-      "card3 card3 card3 . card5 card5"
-      "card3 card3 card3 img3 img3 img3"
-      "img5 . img4 card4 card4 ."
-      ". . . card4 card4 .";
+      ". project project card1 card1 card1 card1 ."
+      ". project project card1 card1 card1 card1 ."
+      ". project project . . . . ."
+      ". card2 card2 img2 img2 card6 card6 ."
+      ". card2 card2 img2 img2 card6 card6 ."
+      ". card3 card3 card3 . card5 card5 ."
+      ". card3 card3 card3 . card5 card5 ."
+      ". card3 card3 card3 img3 img3 img3 ."
+      ". img5 . img4 card4 card4 . ."
+      ". . . . card4 card4 . .";
     grid-gap: 0;
   }
 
