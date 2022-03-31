@@ -9,7 +9,7 @@ I built a personal portfolio site, using images and backgrounds to enhance the l
 
 ## Live Demo (if available)
 
-You can see how it looks here 👉[Portfolio](https://marurevi.github.io/Portfolio-setup-and-mobile-version-skeleton/)
+You can see how it looks here 👉[Portfolio](https://marurevi.github.io/Portfolio/)
 
 ## Authors
 
