@@ -24,6 +24,12 @@
     padding: 16px;
   }
 
+  #quitButton {
+    position: absolute;
+    right: 18px;
+    top: 24px;
+  }
+
   .hidden {
     display: none;
   }

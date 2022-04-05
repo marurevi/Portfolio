@@ -2,6 +2,7 @@ const menuButton = document.getElementById('menuBtn');
 const hiddenPart = document.getElementById('headline');
 const menuContainer = document.querySelector('nav');
 const menuItems = document.querySelectorAll('.display-menu');
+const quitButton = document.getElementById('quitButton');
 
 function menuDisplay() {
   menuButton.classList.add('hidden');
@@ -12,7 +13,18 @@ function menuDisplay() {
   menuContainer.style.padding = '100px 0 250px 0';
   menuContainer.style.backgroundImage = 'url(./images/image_geometry_menu_1-1.svg), url(./images/image_geometry_menu_2-1.svg)';
   menuContainer.style.backgroundPosition = 'top, bottom';
-  menuItems.forEach((item) => item.classList.remove('hidden'));
+  menuItems.forEach((item) => {item.classList.remove('hidden'),item.addEventListener('click', menuQuit)});
+  quitButton.classList.remove('hidden');
+  quitButton.addEventListener('click', menuQuit);
+}
+
+function menuQuit() {
+  menuButton.classList.remove('hidden');
+  hiddenPart.classList.toggle('hidden');
+  menuItems.forEach((item) => item.classList.add('hidden'));
+  quitButton.classList.add('hidden');
+  menuContainer.removeAttribute('style');
 }
 
 menuButton.addEventListener('click', menuDisplay);
+
