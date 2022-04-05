@@ -13,10 +13,7 @@ function menuDisplay() {
   menuContainer.style.padding = '100px 0 250px 0';
   menuContainer.style.backgroundImage= 'url(./images/image_geometry_menu_1-1.svg), url(./images/image_geometry_menu_2-1.svg)'
   menuContainer.style.backgroundPosition = 'top, bottom'  
-  menuItems.forEach(
-      item => item.classList.remove('hidden'));
-     
- 
+  menuItems.forEach(item => item.classList.remove('hidden')); 
 }
 
 menuButton.addEventListener('click', menuDisplay)
