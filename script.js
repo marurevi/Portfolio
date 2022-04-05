@@ -3,6 +3,8 @@ const hiddenPart = document.getElementById('headline');
 const menuContainer = document.querySelector('nav');
 const menuItems = document.querySelectorAll('.display-menu');
 const quitButton = document.getElementById('quitButton');
+const projectBtn = document.querySelectorAll('.btnWhite');
+const hiddenPart2 = document.querySelectorAll('body *:not(.card1, .card1 *, #works)');
 
 function menuQuit() {
   menuButton.classList.remove('hidden');
@@ -22,8 +24,11 @@ function menuDisplay() {
   menuContainer.style.backgroundImage = 'url(./images/image_geometry_menu_1-1.svg), url(./images/image_geometry_menu_2-1.svg)';
   menuContainer.style.backgroundPosition = 'top, bottom';
   menuItems.forEach((item) => { item.classList.remove('hidden'); item.addEventListener('click', menuQuit); });
-  quitButton.classList.remove('hidden');
   quitButton.addEventListener('click', menuQuit);
 }
 
+function projectDisplay() {
+  hiddenPart2.forEach((item) => { item.classList.add('hidden') });
+}
+projectBtn[0].addEventListener('click', projectDisplay);
 menuButton.addEventListener('click', menuDisplay);
