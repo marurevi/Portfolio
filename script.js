@@ -1,5 +1,6 @@
 const menuButton = document.getElementById('menuBtn');
 const hiddenPart = document.getElementById('headline');
+const hiddenProj = document.getElementById('works');
 const menuContainer = document.querySelector('nav');
 const menuItems = document.querySelectorAll('.display-menu');
 const quitButton = document.getElementById('quitButton');
@@ -8,7 +9,8 @@ const hiddenPart2 = document.querySelectorAll('body *:not(.card1, .card1 *, #wor
 
 function menuQuit() {
   menuButton.classList.remove('hidden');
-  hiddenPart.classList.toggle('hidden');
+  hiddenPart.classList.remove('hidden');
+  hiddenPart.classList.remove('hidden');
   menuItems.forEach((item) => item.classList.add('hidden'));
   quitButton.classList.add('hidden');
   menuContainer.classList.remove('menuContainer');
