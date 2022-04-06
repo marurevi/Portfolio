@@ -18,9 +18,13 @@ function menuDisplay() {
   menuContainer.style.display = 'flex';
   menuContainer.style.flexDirection = 'column';
   menuContainer.style.textDecoration = 'none';
-  menuContainer.style.padding = '100px 0 250px 0';
+  menuContainer.style.justifyContent= 'center';
+  menuContainer.style.alignContent= 'center';
+  menuContainer.style.padding= '300px 0'
   menuContainer.style.backgroundImage = 'url(./images/image_geometry_menu_1-1.svg), url(./images/image_geometry_menu_2-1.svg)';
-  menuContainer.style.backgroundPosition = 'top, bottom';
+  menuContainer.style.backgroundRepeat= 'no-repeat';
+  menuContainer.style.backgroundPosition = 'top left, bottom left';
+  menuContainer.style.backgroundSize= '80%, 100%';
   menuItems.forEach((item) => { item.classList.remove('hidden'); item.addEventListener('click', menuQuit); });
   quitButton.classList.remove('hidden');
   quitButton.addEventListener('click', menuQuit);
