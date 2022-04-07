@@ -265,6 +265,7 @@
     color: white;
   }
   
+  /* CLASESS FOR POPUP WINDOWS */
   .popupContainerStyle {
     display: flex;
     flex-direction: column;
@@ -282,6 +283,47 @@
     z-index: 1;
   }
 
+  .titleProject {
+    font-family: "Poppins", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700, bold;
+    line-height: 16px;
+    color: #1a2236;
+  }
+
+  .technologiesContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .technologies {
+    font-family: "Poppins", serif;
+    font-size: 10.33px;
+    font-style: normal;
+    font-weight: 300, lighter;
+    line-height: 80%;
+    border: solid 1px #1a2236;
+    color: #1a2236;
+  }
+
+  .imgPopup {
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+
+  .textPopup {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1a2236;
+  }
+  
+
+  /* END CLASSES FOR POPUP WINDOWS */
   .hidden {
     display: none;
   }
