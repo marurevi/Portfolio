@@ -30,6 +30,12 @@
     top: 24px;
   }
 
+  #exitButton {
+    position: absolute;
+    right: 18px;
+    top: 24px;
+  }
+
   .display-menu {
     font-family: "Poppins", sans-serif;
     font-size: 18px;
@@ -274,6 +280,7 @@
     justify-content: center;
     align-content: center;
     height: 100%;
+    width: 100%;
     background-color: white;
     padding: 20px;
     position: fixed;
@@ -291,6 +298,7 @@
     font-weight: 700, bold;
     line-height: 16px;
     color: #1a2236;
+    position: absolute;
     top: 57px;
     width: 80%;
   }
@@ -317,8 +325,10 @@
 
   .imgPopup {
     width: 100%;
-    display: block;
-    position: relative;
+    position: absolute;
+    top: 134px;
+    width: 80%;
+    justify-content: center;
   }
 
   .textPopup {

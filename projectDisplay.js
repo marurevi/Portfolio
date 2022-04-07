@@ -25,7 +25,7 @@ projects.forEach((card) => {
   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
   laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
   do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-  exercitation ullamco laboris nisi`;
+  exercitation ullamco laboris nisi.`;
   card.name = 'Project name goes here';
 });
 
@@ -36,10 +36,12 @@ const btnWhite = document.querySelectorAll('.btnWhite');
 const popupContainer = document.getElementById('popupContainer');
 const closeButton = document.createElement('button');
 closeButton.setAttribute('type', 'button');
+closeButton.setAttribute('id', 'exitButton');
 closeButton.innerHTML = '<img src= "./images/Union.svg" alt= "close button"/>';
 closeButton.style.backgroundColor = 'white';
 closeButton.className = 'hidden';
-/// //DISPLAY POPUP WINDOWS/////
+
+//////DISPLAY POPUP WINDOWS/////
 
 // Asign and id to each button
 let i = 0;
@@ -58,14 +60,24 @@ const button3 = document.getElementById('3');
 const button4 = document.getElementById('4');
 const button5 = document.getElementById('5');
 
+
+button0.addEventListener('click', popupWindow(0));
+button1.addEventListener('click', popupWindow(1));
+button2.addEventListener('click', popupWindow(2));
+button3.addEventListener('click', popupWindow(3));
+button4.addEventListener('click', popupWindow(4));
+button5.addEventListener('click', popupWindow(5));
+
 function popupWindow(num) {
+  console.log('click'+ num )
   // console.log(popupContainer)
-  popupContainer.classList.remove('hidden');
-  fillContainer(num);
+  //popupContainer.classList.remove('hidden');
+  //fillContainer(num);
+  //  removeEL(num);
   // popupContainer.classList.add('hidden');
-  closeButton.classList.toggle('hidden');
-  closeButton.addEventListener('click', btnExit);
-  document.getElementById(num).removeEventListener('click', popupWindow(num));
+  // closeButton.classList.remove('hidden');
+  // closeButton.addEventListener('click', btnExit);  
+  // document.getElementById(num).removeEventListener('click', popupWindow(num));
 }
 
 function fillContainer(n) {
@@ -75,7 +87,8 @@ function fillContainer(n) {
   const technologies = document.createElement('li');
   const picture = document.createElement('img');
   const description = document.createElement('p');
-  const linksBtn = document.createElement('button');
+  const linksBtnLive = document.createElement('button');
+  const linksBtnSource = document.createElement('button');
 
   // fill and style each one.
   titleProject.innerText = projects[n].name;
@@ -99,18 +112,30 @@ function fillContainer(n) {
   description.innerText = `${projects[n].description}`;
   popupContainer.appendChild(description);
 
+  linksBtnLive.className = 'btnWhite';
+  linksBtnLive.setAttribute('type', 'button');
+  linksBtnLive.innerHTML = '<a href=`${project[n].linkLiveVersion}`>See Live<a/>';
+
+  linksBtnSource.className = 'btnWhite';
+  linksBtnSource.innerText = 'See Live';
+  linksBtnSource.setAttribute('type', 'button');
+  linksBtnSource.innerHTML = '<a href=`${project[n].linkSource}`>See source<a/>';
+
+
   // REMEMBER PUT THE BUTTONS!!!
 }
 
-button0.addEventListener('click', popupWindow(0));
-button1.addEventListener('click', popupWindow(1));
-button2.addEventListener('click', popupWindow(2));
-button3.addEventListener('click', popupWindow(3));
-button4.addEventListener('click', popupWindow(4));
-button5.addEventListener('click', popupWindow(5));
+function removeEL(n) {
+  for (let i=0; i<6; i+=1) {
+    if (n !== i) { 
+      let btn= document.getElementById(`${i}`);
+      btn.removeEventListener('click', popupWindow(n));
+    }
+  }
+}
 
 function btnExit() {
-  closeButton.classList.toggle('hidden');
+  closeButton.classList.add('hidden');
   button0.removeEventListener('click', popupWindow(0));
   button1.removeEventListener('click', popupWindow(1));
   button2.removeEventListener('click', popupWindow(2));
