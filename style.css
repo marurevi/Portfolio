@@ -272,6 +272,7 @@
   }
   
   /* CLASESS FOR POPUP WINDOWS */
+  
   .popupContainerStyle {
     display: flex;
     flex-direction: column;
