@@ -12,22 +12,22 @@ class Card {
 
 // Creation of array of projects:
 const projects = [];
-for (let i = 1; i < 7; i++) {
+for (let i = 1; i < 7; i += 1) {
   let cardNumb = `card${i}`;
   cardNumb = new Card(`project${i}`, 'paste descriptive text here...', `./images/pj${i}.png`, ['HTML/CSS',
-   'Ruby on Rails', 'JavaScript'], 'www.google.com', 'www.github.com');
+    'Ruby on Rails', 'JavaScript'], 'www.google.com', 'www.github.com');
   projects.push(cardNumb);
   // console.log(cardNumb)
 }
 
-for (let card of projects) { 
-  card.description= `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+projects.forEach((card) => {
+  card.description = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
   laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
   do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
   exercitation ullamco laboris nisi`;
-  card.name= `Project name goes here`;
-}
+  card.name = 'Project name goes here';
+});
 
 // console.table(projects)
 
@@ -38,14 +38,14 @@ const closeButton = document.createElement('button');
 closeButton.setAttribute('type', 'button');
 closeButton.innerHTML = '<img src= "./images/Union.svg" alt= "close button"/>';
 closeButton.style.backgroundColor = 'white';
-closeButton.className='hidden';
+closeButton.className = 'hidden';
 /// //DISPLAY POPUP WINDOWS/////
 
 // Asign and id to each button
 let i = 0;
-for (b of btnWhite) {
+for (let b of btnWhite) {
   b.setAttribute('id', i);
-  i++;
+  i += 1;
 }
 // console.log(btnWhite)
 
@@ -57,13 +57,6 @@ const button2 = document.getElementById('2');
 const button3 = document.getElementById('3');
 const button4 = document.getElementById('4');
 const button5 = document.getElementById('5');
-
-button0.addEventListener('click', popupWindow(0));
-button1.addEventListener('click', popupWindow(1));
-button2.addEventListener('click', popupWindow(2));
-button3.addEventListener('click', popupWindow(3));
-button4.addEventListener('click', popupWindow(4));
-button5.addEventListener('click', popupWindow(5));
 
 function popupWindow(num) {
   // console.log(popupContainer)
@@ -90,8 +83,8 @@ function fillContainer(n) {
   popupContainer.appendChild(titleProject);
 
   technologiesContainer.className = 'technologiesContainer';
-  technologies.className= 'technologies';
-  for (let t=0; t<projects[n].technologies.length; t++) {
+  technologies.className = 'technologies';
+  for (let t = 0; t < projects[n].technologies.length; t += 1) {
     technologies.innerHTML = projects[n].technologies[t];
     technologies.append(t);
   }
@@ -109,6 +102,13 @@ function fillContainer(n) {
   // REMEMBER PUT THE BUTTONS!!!
 }
 
+button0.addEventListener('click', popupWindow(0));
+button1.addEventListener('click', popupWindow(1));
+button2.addEventListener('click', popupWindow(2));
+button3.addEventListener('click', popupWindow(3));
+button4.addEventListener('click', popupWindow(4));
+button5.addEventListener('click', popupWindow(5));
+
 function btnExit() {
   closeButton.classList.toggle('hidden');
   button0.removeEventListener('click', popupWindow(0));
@@ -119,5 +119,3 @@ function btnExit() {
   button5.removeEventListener('click', popupWindow(5));
   popupContainer.classList.remove('popupcontainer');
 }
-
-
