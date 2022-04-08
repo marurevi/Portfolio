@@ -921,6 +921,10 @@
     margin: 60px 0 0 60px;
   }
 
+  .buttonContainer > .btnWhite {
+    margin-right: 30px;
+  }
+
   .card1:hover #project1,
   .card1:hover .tools,
   .card1:hover .btnWhite,
@@ -1003,146 +1007,144 @@
     line-height: 30px;
     color: white;
   }
-/* CLASESS FOR POPUP WINDOWS */
 
-.popupContainerStyle {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  text-align: center;
-  justify-content: center;
-  align-content: center;
-  height: 100%;
-  width: 100%;
-  background-color: white;
-  border: #1a2236 solid 70px;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-}
+  /* CLASESS FOR POPUP WINDOWS */
 
-.containerNewElements {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 30% 10% 10% 10%;
-}
+  .popupContainerStyle {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border: #1a2236 solid 70px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
 
-.exitButton {
-  position: absolute;
-  top: 73.45px;
-  right: 73.45px;
-  width: 40px;
-  height: 40px;
-  justify-items: center;
-  background-color: white;
-  border: 0;
-  z-index: 2;
-}
+  .containerNewElements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30% 10% 10% 10%;
+  }
 
-.exitButton img {
-  width: 100%;
-}
+  .exitButton {
+    position: absolute;
+    top: 73.45px;
+    right: 73.45px;
+    width: 40px;
+    height: 40px;
+    justify-items: center;
+    background-color: white;
+    border: 0;
+    z-index: 2;
+  }
 
-.containerNewElements > h2,
-.titleProject {
-  font-family: "Poppins", serif;
-  font-size: 60px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 48px;
-  color: #1a2236;
-  text-align: left;
-  margin-bottom: 5%;
-  width: 100%;
-  background-image: none;
-  transform: none;
-  padding: 0;
-  grid-area: unset;
-}
+  .exitButton img {
+    width: 100%;
+  }
 
-.technologiesContainer {
-  display: flex;
-  justify-content: left;
-  list-style: none;
-}
+  .containerNewElements > h2,
+  .titleProject {
+    font-family: "Poppins", serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    color: #1a2236;
+    text-align: left;
+    margin-bottom: 5%;
+    width: 100%;
+    background-image: none;
+    transform: none;
+    padding: 0;
+    grid-area: unset;
+  }
 
-.technologies {
-  font-family: "Poppins", serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 80%;
-  text-align: center;
-  color: #1a2236;
-  list-style: none;
-  border: solid #1a2236 1px;
-  padding: 20px;
-  margin-right: 40px;
-}
+  .technologiesContainer {
+    display: flex;
+    justify-content: left;
+    list-style: none;
+  }
 
-.imgPopup {
-  width: 80%;
-  justify-content: center;
-  margin: 5% 0;
-}
+  .technologies {
+    font-family: "Poppins", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 80%;
+    text-align: center;
+    color: #1a2236;
+    list-style: none;
+    border: solid #1a2236 1px;
+    padding: 20px;
+    margin-right: 40px;
+  }
 
-.txtlink {
-  text-decoration: none;
-  font-weight: bold;
-  color: #1a2236;
-}
+  .imgPopup {
+    width: 80%;
+    justify-content: center;
+    margin: 5% 0;
+  }
 
-.buttonContainer{
-  display: flex;
-  margin: 5% 0;
-}
+  .txtlink {
+    text-decoration: none;
+    font-weight: bold;
+    color: #1a2236;
+  }
 
-.buttonContainer > .btnWhite {
-  margin-right: 30px;
-}
+  .buttonContainer {
+    display: flex;
+    margin: 5% 0;
+  }
 
-.btnWhite:hover .txtlink {
-  text-decoration: none;
-  font-weight: 500;
-  color: white;
-  width: 30%;
-}
+  .btnWhite:hover .txtlink {
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    width: 30%;
+  }
 
-.btnWhite:active .txtlink {
-  text-decoration: none;
-  font-weight: 500;
-  color: white;
-  width: 30%;
-}
+  .btnWhite:active .txtlink {
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    width: 30%;
+  }
 
-.btnWhite a {
-  display: flex;
-  justify-content: space-around;
-  padding: 0 20%;
-}
+  .btnWhite a {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20%;
+  }
 
-.textPopup {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  justify-content: center;
-  text-align: left;
-  font-weight: 400;
-  font-size: 20px;
-  width: 80%;
-  line-height: 27px;
-  color: #1a2236;
-}
+  .textPopup {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    justify-content: center;
+    text-align: left;
+    font-weight: 400;
+    font-size: 20px;
+    width: 80%;
+    line-height: 27px;
+    color: #1a2236;
+  }
 
-/* END CLASSES FOR POPUP WINDOWS */
+  /* END CLASSES FOR POPUP WINDOWS */
 
-.hidden {
-  display: none;
-}
+  .hidden {
+    display: none;
+  }
+
   .text5 {
     font-family: "Poppins", serif;
     font-size: 16px;
