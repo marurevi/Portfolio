@@ -30,12 +30,6 @@
     top: 24px;
   }
 
-  #exitButton {
-    position: absolute;
-    right: 18px;
-    top: 24px;
-  }
-
   .display-menu {
     font-family: "Poppins", sans-serif;
     font-size: 18px;
@@ -157,6 +151,7 @@
 
   .btnWhite:hover {
     background-color: #1a2236;
+    text-decoration: none;
     color: white;
     border: solid white 1px;
   }
@@ -170,6 +165,7 @@
 
   .btnWhite:active {
     background-color: #1a2236;
+    text-decoration: none;
     color: white;
     border: solid white 5px;
   }
@@ -272,7 +268,7 @@
   }
   
   /* CLASESS FOR POPUP WINDOWS */
-  
+
   .popupContainerStyle {
     display: flex;
     flex-direction: column;
@@ -283,7 +279,6 @@
     height: 100%;
     width: 100%;
     background-color: white;
-    padding: 20px;
     position: fixed;
     top: 0;
     right: 0;
@@ -292,15 +287,31 @@
     z-index: 1;
   }
 
+  .exitButton {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 60px;
+    height: 60px;
+    justify-items: center;
+    background-color: white;
+    border: 0;
+    padding: 16px;
+    margin: 20px 20px;
+    z-index: 2;
+  }
+
   .titleProject {
     font-family: "Poppins", serif;
     font-size: 20px;
     font-style: normal;
-    font-weight: 700, bold;
+    font-weight: 700, bolder;
     line-height: 16px;
     color: #1a2236;
-    position: absolute;
-    top: 57px;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    margin-bottom: 20px;
     width: 80%;
   }
 
@@ -312,35 +323,62 @@
 
   .technologies {
     font-family: "Poppins", serif;
-    font-size: 10.33px;
+    font-size: 12px;
     font-style: normal;
-    font-weight: 300, lighter;
+    font-weight: 300;
     line-height: 80%;
     text-align: center;
     color: #1a2236;
     list-style: none;
     border: solid #1a2236 1px;
-    padding: 5px;
-    margin: 2px 10px 2px 10px;
+    padding: 10px;
+    margin: 20px 10px;
   }
 
   .imgPopup {
     width: 100%;
-    position: absolute;
-    top: 134px;
-    width: 80%;
+    position: relative;
     justify-content: center;
+    margin: 0 20px 20px 0;
+  }
+
+  .txtlink {
+    text-decoration: none;
+    font-weight: bold;
+    color: #1a2236;
+  }
+
+  .btnWhite:hover .txtlink {
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    width: 80%;
+  }
+
+  .btnWhite:active .txtlink {
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    width: 80%;
+  }
+
+  .btnWhite a {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20%;
   }
 
   .textPopup {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
+    justify-content: center;
     font-weight: 400;
     font-size: 18px;
+    width: 80%;
     line-height: 27px;
     color: #1a2236;
   }
-  
+
   /* END CLASSES FOR POPUP WINDOWS */
   
   .hidden {
@@ -589,6 +627,7 @@
     margin-bottom: 10px;
     padding: 12px 21px;
     background-color: white;
+    text-decoration: none;
     color: #1a2236;
     font-family: "Poppins", sans-serif;
     font-size: 18px;
@@ -610,6 +649,7 @@
 
   .btnWhite:hover {
     background-color: #1a2236;
+    text-decoration: none;
     color: white;
     border: solid white 1px;
   }
@@ -623,6 +663,7 @@
 
   .btnWhite:active {
     background-color: #1a2236;
+    text-decoration: none;
     color: white;
     border: solid white 5px;
   }

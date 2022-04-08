@@ -18,11 +18,9 @@ const projects = [];
 for (let i = 1; i < 7; i += 1) {
   let cardNumb = `card${i}`;
   cardNumb = new Card(`card${i}`, 'Project name goes here', `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-  laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+  tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
   do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-  exercitation ullamco laboris nisi.`, `./images/pj${i}.png`, ['HTML/CSS',
-    'Ruby on Rails', 'JavaScript'], 'www.google.com', 'www.github.com');
+  exercitation ullamco laboris nisi.`, `./images/pj${i}.png`, ['HTML/CSS', 'Ruby on Rails', 'JavaScript'], 'www.google.com', 'www.github.com');
   projects.push(cardNumb);
   //console.log(cardNumb)
 }
@@ -33,6 +31,7 @@ for (let i = 1; i < 7; i += 1) {
 
 const btnWhite = document.querySelectorAll('.btnWhite');
 const popupContainer = document.getElementById('popupContainer');
+const exitBtn = document.createElement('div');
 
 for (b of btnWhite) {
   b.addEventListener('click', (e) => {
@@ -43,7 +42,6 @@ for (b of btnWhite) {
   });
 }
 
-
 function fillContainer(card) {
   for(let i of projects) {
     if(i.name == card) {
@@ -51,21 +49,29 @@ function fillContainer(card) {
     // Create elements
       const titleProject = document.createElement('h2');
       const technologiesContainer = document.createElement('ul');
-      const technologies = document.createElement('li');
       const picture = document.createElement('img');
       const description = document.createElement('p');
       const linksBtnLive = document.createElement('button');
       const linksBtnSource = document.createElement('button');
+      
 
     // fill and style each one.
+      exitBtn.setAttribute ('id', '#exitButton');
+      exitBtn.innerHTML = `<button type="button"><img src="./images/Union.svg" alt=""></img></button>`;
+      popupContainer.appendChild(exitBtn);
+
       titleProject.innerText = i.title;
       titleProject.className = 'titleProject';
       popupContainer.appendChild(titleProject);
 
       technologiesContainer.className = 'technologiesContainer';
+      popupContainer.appendChild(technologiesContainer);
+      
+      for (let t of i.technologies) {
+      const technologies = document.createElement('li');
+      technologies.innerHTML = t;
       technologies.className = 'technologies';
-      for (let t = 0; t < i.technologies.length; t += 1) {
-      technologies.innerHTML = i.technologies[t];
+      technologiesContainer.append(technologies);
       }
 
       picture.setAttribute('src', `${i.featuredImage}`);
@@ -78,14 +84,22 @@ function fillContainer(card) {
 
       linksBtnLive.className = 'btnWhite';
       linksBtnLive.setAttribute('type', 'button');
-      linksBtnLive.innerHTML = '<a href=`${i.linkLiveVersion}`>See Live<a/>';
+      linksBtnLive.innerHTML = `<a class="txtlink" href=${i.linkLiveVersion}>See Live <span><img src="./images/btnUnion.svg" alt=""></span><a/>`;
+      popupContainer.appendChild(linksBtnLive);
 
       linksBtnSource.className = 'btnWhite';
       linksBtnSource.innerText = 'See Live';
       linksBtnSource.setAttribute('type', 'button');
-      linksBtnSource.innerHTML = '<a href=`${i.linkSource}`>See source<a/>';
+      linksBtnSource.innerHTML = `<a class="txtlink" href=${i.linkSource}>See source <span><img src="./images/btnGitHub.svg" alt=""></span><a/>`;
+      popupContainer.appendChild(linksBtnSource);
     }
   }
+}
+
+exitBtn.addEventListener('click', exitPopup)
+
+function exitPopup () {
+console.log ('exit popup')
 }
 
 /*  - fix tools betwen img and title
