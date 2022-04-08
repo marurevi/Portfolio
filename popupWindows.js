@@ -1,4 +1,4 @@
-///// CREATION OF CONSTRUCTOR CARD ///////
+/// // CREATION OF CONSTRUCTOR CARD ///////
 
 class Card {
   constructor(name, title, description, featuredImage, technologies, linkLiveVersion, linkSource) {
@@ -22,42 +22,31 @@ for (let i = 1; i < 7; i += 1) {
   do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
   exercitation ullamco laboris nisi.`, `./images/pj${i}.png`, ['HTML/CSS', 'Ruby on Rails', 'JavaScript'], 'www.google.com', 'www.github.com');
   projects.push(cardNumb);
-  //console.log(cardNumb)
+  // console.log(cardNumb)
 }
-  
+
 // console.table(projects)
 
-///// CREATION OF POPUP WINDOWS /////
+/// // CREATION OF POPUP WINDOWS /////
 
 const btnWhite = document.querySelectorAll('.btnWhite');
 const popupContainer = document.getElementById('popupContainer');
 const exitBtn = document.createElement('div');
 
-for (b of btnWhite) {
-  b.addEventListener('click', (e) => {
-    b.id = e.path[1].classList[0];
-    popupContainer.classList.remove('hidden'); 
-    fillContainer(b.id)     
-    //console.log (b.id)
-  });
-}
-
 function fillContainer(card) {
-  for(let i of projects) {
-    if(i.name == card) {
+  // Create elements
+  const titleProject = document.createElement('h2');
+  const technologiesContainer = document.createElement('ul');
+  const picture = document.createElement('img');
+  const description = document.createElement('p');
+  const linksBtnLive = document.createElement('button');
+  const linksBtnSource = document.createElement('button');
 
-    // Create elements
-      const titleProject = document.createElement('h2');
-      const technologiesContainer = document.createElement('ul');
-      const picture = document.createElement('img');
-      const description = document.createElement('p');
-      const linksBtnLive = document.createElement('button');
-      const linksBtnSource = document.createElement('button');
-      
-
+  for (const i of projects) {
+    if (i.name === card) {
     // fill and style each one.
-      exitBtn.setAttribute ('id', '#exitButton');
-      exitBtn.innerHTML = `<button type="button"><img src="./images/Union.svg" alt=""></img></button>`;
+      exitBtn.setAttribute('id', '#exitButton');
+      exitBtn.innerHTML = '<button type="button"><img src="./images/Union.svg" alt=""></img></button>';
       popupContainer.appendChild(exitBtn);
 
       titleProject.innerText = i.title;
@@ -66,12 +55,12 @@ function fillContainer(card) {
 
       technologiesContainer.className = 'technologiesContainer';
       popupContainer.appendChild(technologiesContainer);
-      
-      for (let t of i.technologies) {
-      const technologies = document.createElement('li');
-      technologies.innerHTML = t;
-      technologies.className = 'technologies';
-      technologiesContainer.append(technologies);
+
+      for (const t of i.technologies) {
+        const technologies = document.createElement('li');
+        technologies.innerHTML = t;
+        technologies.className = 'technologies';
+        technologiesContainer.append(technologies);
       }
 
       picture.setAttribute('src', `${i.featuredImage}`);
@@ -92,17 +81,28 @@ function fillContainer(card) {
       linksBtnSource.setAttribute('type', 'button');
       linksBtnSource.innerHTML = `<a class="txtlink" href=${i.linkSource}>See source <span><img src="./images/btnGitHub.svg" alt=""></span><a/>`;
       popupContainer.appendChild(linksBtnSource);
+
+      function exitPopup() {
+        titleProject.remove();
+        technologiesContainer.remove();
+        picture.remove();
+        description.remove();
+        linksBtnLive.remove();
+        linksBtnSource.remove();
+        exitBtn.remove();
+        popupContainer.classList.add('hidden');
+      }
+
+      exitBtn.addEventListener('click', exitPopup);
     }
   }
 }
 
-exitBtn.addEventListener('click', exitPopup)
-
-function exitPopup () {
-console.log ('exit popup')
+for (const b of btnWhite) {
+  b.addEventListener('click', (e) => {
+    b.id = e.path[1].classList[0];
+    popupContainer.classList.remove('hidden');
+    fillContainer(b.id);
+    // console.log (b.id)
+  });
 }
-
-/*  - fix tools betwen img and title
-    - buttons at the end
-    - quit button to  
-*/

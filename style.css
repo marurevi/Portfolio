@@ -266,7 +266,7 @@
     line-height: 30px;
     color: white;
   }
-  
+
   /* CLASESS FOR POPUP WINDOWS */
 
   .popupContainerStyle {
@@ -305,7 +305,7 @@
     font-family: "Poppins", serif;
     font-size: 20px;
     font-style: normal;
-    font-weight: 700, bolder;
+    font-weight: bolder;
     line-height: 16px;
     color: #1a2236;
     text-align: center;
@@ -380,7 +380,7 @@
   }
 
   /* END CLASSES FOR POPUP WINDOWS */
-  
+
   .hidden {
     display: none;
   }

@@ -3,7 +3,6 @@ const hiddenPart = document.getElementById('headline');
 const menuContainer = document.querySelector('nav');
 const menuItems = document.querySelectorAll('.display-menu');
 const quitButton = document.getElementById('quitButton');
-const projectBtn = document.querySelectorAll('.btnWhite');
 
 function menuQuit() {
   menuButton.classList.remove('hidden');
