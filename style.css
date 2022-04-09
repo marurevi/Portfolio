@@ -533,8 +533,9 @@
     color: red;
     text-shadow: #000 2px 2px 8px;
     position: relative;
-    left: 9px;
-    bottom: 48px;
+    left: 91px;
+    top: 232px;
+    z-index: 1;
   }
 
   .footer-links {
@@ -1284,8 +1285,8 @@
     color: red;
     text-shadow: #000 2px 2px 8px;
     position: relative;
-    right: 237px;
-    top: 40px;
+    right: 327px;
+    top: 224px;
   }
 
   .footer-links {
