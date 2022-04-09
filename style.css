@@ -527,6 +527,17 @@
     outline: none;
   }
 
+  small {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    color: red;
+    text-shadow: #000 2px 2px 8px;
+    position: relative;
+    left: 91px;
+    top: 232px;
+    z-index: 1;
+  }
+
   .footer-links {
     background: #1a2236;
     box-sizing: border-box;
@@ -1266,6 +1277,16 @@
   textarea:focus {
     border: 1px solid #1a2236;
     outline: none;
+  }
+
+  small {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    color: red;
+    text-shadow: #000 2px 2px 8px;
+    position: relative;
+    right: 327px;
+    top: 224px;
   }
 
   .footer-links {
