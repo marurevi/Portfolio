@@ -1,6 +1,6 @@
 const email = document.getElementById('email');
 const msg = document.querySelector('small');
-const form = document.getElementById('contact');
+const form = document.getElementById('submitbtn');
 
 form.addEventListener('submit', (event) => {
   if (email.value !== email.value.toLowerCase()) {
