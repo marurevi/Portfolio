@@ -108,7 +108,6 @@ btnWhite.forEach((button) => {
   button.addEventListener('click', (event) => {
     button.setAttribute('id', `${event.path[1].classList[0]}`);
     popupContainer.classList.remove('hidden');
-    fillContainer(button.id);
-    // console.log (button.id)
+    fillContainer(button.id)
   });
 });

@@ -1051,7 +1051,6 @@
     align-content: center;
     padding: 3%;
     width: 100%;
-    height: 100%;
   }
 
   .exitButton {
@@ -1083,7 +1082,6 @@
     background-image: none;
     transform: none;
     padding: 0;
-    grid-area: unset;
   }
 
   .containerNewElements > p {
