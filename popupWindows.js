@@ -19,9 +19,15 @@ for (let i = 1; i < 7; i += 1) {
   let cardNumb = `card${i}`;
   cardNumb = new Card(`card${i}`, 'Project name goes here', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.', `./images/pj${i}.svg`, ['HTML/CSS', 'Ruby on Rails', 'JavaScript'], 'www.google.com', 'www.github.com');
   projects.push(cardNumb);
-  // console.log(cardNumb)
+  //  console.log(cardNumb)
 }
 
+projects[0].title = 'Capstone 1';
+projects[0].description = 'In this capstone project, I built an online website for a conference. I used the guidelines of the template created for Cindy Shin.The website con a fake conference of Comic Con. All the content was free images that I download from internet and enhace some of them with photoshop.';
+projects[0].featuredImage = './images/Capstone1.png';
+projects[0].technologies = ['HTML/CSS', 'JavaScript'];
+projects[0].linkLiveVersion = 'https://marurevi.github.io/Capstone-1/';
+projects[0].linkSource = 'https://github.com/marurevi/Capstone-1';
 // console.table(projects)
 
 /// // CREATION OF POPUP WINDOWS /////
