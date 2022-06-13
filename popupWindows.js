@@ -19,9 +19,22 @@ for (let i = 1; i < 7; i += 1) {
   let cardNumb = `card${i}`;
   cardNumb = new Card(`card${i}`, 'Project name goes here', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.', `./images/pj${i}.svg`, ['HTML/CSS', 'Ruby on Rails', 'JavaScript'], 'www.google.com', 'www.github.com');
   projects.push(cardNumb);
-  // console.log(cardNumb)
+  //  console.log(cardNumb)
 }
 
+projects[0].title = 'Capstone 1';
+projects[0].description = 'In this capstone project, I built an online website for a conference. I used the guidelines of the template created for Cindy Shin.The website con a fake conference of Comic Con. All the content was free images that I download from internet and enhace some of them with photoshop.';
+projects[0].featuredImage = './images/Capstone1.png';
+projects[0].technologies = ['HTML/CSS', 'JavaScript'];
+projects[0].linkLiveVersion = 'https://marurevi.github.io/Capstone-1/';
+projects[0].linkSource = 'https://github.com/marurevi/Capstone-1';
+
+projects[1].title = 'Capstone 2';
+projects[1].description = 'We built our own web application based on an external API. We selected an API that provides data about food recipies. The webapp has 2 user interfaces: A home page showing a list of items that you can "like." A popup window with more data about an item that you can use to comment on it';
+projects[1].featuredImage = './images/Capstone2.png';
+projects[1].technologies = ['HTML/CSS', 'JavaScript'];
+projects[1].linkLiveVersion = 'https://marurevi.github.io/Tasty-Recipes-API/dist/index.html';
+projects[1].linkSource = 'https://github.com/marurevi/Tasty-Recipes-API';
 // console.table(projects)
 
 /// // CREATION OF POPUP WINDOWS /////
@@ -108,6 +121,6 @@ btnWhite.forEach((button) => {
   button.addEventListener('click', (event) => {
     button.setAttribute('id', `${event.path[1].classList[0]}`);
     popupContainer.classList.remove('hidden');
-    fillContainer(button.id)
+    fillContainer(button.id);
   });
 });
