@@ -31,7 +31,7 @@ projects[0].linkSource = 'https://github.com/marurevi/Capstone-1';
 
 projects[1].title = 'Capstone 2';
 projects[1].description = 'We built our own web application based on an external API. We selected an API that provides data about food recipies. The webapp has 2 user interfaces: A home page showing a list of items that you can "like." A popup window with more data about an item that you can use to comment on it';
-projects[1].featuredImage = 'https://user-images.githubusercontent.com/92180054/169616865-51ae370d-e276-4e74-a592-6679250cf875.png';
+projects[1].featuredImage = './images/Capstone2.png';
 projects[1].technologies = ['HTML/CSS', 'JavaScript'];
 projects[1].linkLiveVersion = 'https://marurevi.github.io/Tasty-Recipes-API/dist/index.html';
 projects[1].linkSource = 'https://github.com/marurevi/Tasty-Recipes-API';
